@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 500 300" version="1.1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>Game Board</title>
+	<rect x="0" y="0" width="100%" height="100%" fill="#3bb3c9" stroke="#1800a1" stroke-opacity="30"/>
+    <rect x="400" y="0" height="100%" width="100" id="RightBoard" fill="#47219e" />
+	<rect x="400" y="260" height="10" width="100" id="Easy Mode" fill="green" onclick="ModesEasy()"/>
+	<rect x="400" y="275" height="10" width="100" id="Medium Mode" fill="yellow" onclick="ModesMedium()"/>
+	<rect x="400" y="290" height="10" width="100" id="Hard Mode" fill="red" onclick="ModesHard()"/>
+  	<circle cx="200" cy="250" r="3" stroke="#161313" fill="#000000" id="BallID" />
+	<rect x="150" y="290" class="RecObject" height="20" width="110" id="RectangleID" fill="#3124a8" />
+	<g id="BoardID" />
+	<text x="430" y="100" class="points" font-size="70" id="PointsID"> </text>
+    <text x="400" y="20" >Your Score:</text>
+	<text x="400" y="150" font-size="13">Goal of The game</text>
+	<text x="400" y="160" font-size="8" >Your goal is to shoot down</text>
+    <text x="400" y="170" font-size="8" >as many enemies as You can</text>
+    <text x="400" y="180" font-size="8" >in the least amount of time</text>
+	<text x="425" y="270" font-size="10" >Easy Mode</text>
+	<text x="420" y="285" font-size="10" >Medium Mode</text>
+	<text x="425" y="300" font-size="10" >Hard Mode</text>
+    <text class="count" role="status" font-size="13" aria-atomic="true" x="400" y="210">Time remaining:<tspan x="0"></tspan><tspan id="timer" x="400" dy="50">0.00</tspan>s</text>
+
+	<script xlink:href="2DBallGame.js"/>
+</svg>
